@@ -1,5 +1,7 @@
 # State Change
 
+[![build status](https://secure.travis-ci.org/twilson63/state-change.png)](http://travis-ci.org/twilson63/state-change)
+
 State is a module that takes an initial state and a update function, it returns an immutable state cursor, when any changes occur to that cursor a change event is triggered and istate calls the passed in update function with the new data.
 
 This is very useful for virtual dom web based applications, it prevents the need to pass around emitters to track and adjust for state and re-rendering.
