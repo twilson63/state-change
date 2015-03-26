@@ -1,9 +1,10 @@
 var test = require('tap').test
 
-var stateEvent = require('../') 
+var State = require('../') 
 
 test('get notified on change', function (t) {
-  var state = stateEvent({}, function (d) {
+  var state = State({})
+  State.change(state, function (d) {
   	t.equals(d.foo, 'bar')
   	t.end()
   })
