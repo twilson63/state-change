@@ -1,6 +1,6 @@
 {
   "name": "state-change",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A state change event module that runs a function everytime a state object is changed",
   "main": "index.js",
   "scripts": {
