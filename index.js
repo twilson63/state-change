@@ -14,7 +14,7 @@ function State (initialState) {
 function change (cursor, fn) {
   if (fn) {
     cursor._onChange = function (data) {
-      fn(data.toJS())
+      fn(data)
     } 
   }
 }
